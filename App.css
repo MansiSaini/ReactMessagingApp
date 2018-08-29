@@ -1,0 +1,290 @@
+.App {
+ display:flex;
+ pointer: default;
+}
+
+.leftContainer {
+  order: 0;
+  border: 1px solid black;
+  width: 400px;
+  height: 720px;
+  overflow-y: auto;
+}
+
+.rightContainer {
+  order: 1;
+  border: 1px solid black;
+  width: 900px;
+  height: 640px;
+}
+
+.messagesContainer {
+  border-bottom: 2px solid black;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  cursor: pointer;
+  background-color: #fafafa;
+}
+
+.avatarIcon {
+  order: 1;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid #91c3be;
+}
+
+.unreadMessagesBubble {
+  order:3;
+  width: 15px;
+  height: 15px;
+  background-color: #1c6198;
+  text-align: center;
+  color: white;
+  border-radius: 100%;
+  margin-left: 30px;
+  padding: 4px;
+}
+
+.userInfo {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.userName {
+  order:1;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.textPreview {
+  order: 2;
+  color: gray;
+  font-size: 12px;
+  font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.utilsDiv {
+  width: 400px;
+  height: 150px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+.searchBar, .searchBar:focus {
+  order: 1;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 20px;
+  width: 175px;
+  outline: none;
+}
+
+.deleteBtn {
+  order: 2;
+  margin: 0 20px 0 25px;
+  text-align: center;
+  cursor: pointer;
+  color: gray;
+}
+
+.createNewBtn {
+  order: 3;
+  margin: 0 20px 0 20px;
+  text-align: center;
+  padding-top: 5px;
+  cursor: pointer;
+  color: gray;
+}
+
+.currentChatDiv {
+  border-bottom: 1px solid black;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.currentUserDiv {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.currentUser {
+  font-size: 24px;
+  color: black;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.lastActive {
+  color: gray;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.settingsIcon {
+  order: 2;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.chatDiv {
+  background-color: #fafafa;
+  height: 488px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.speech-bubble-container {
+  width: 845px;
+  padding: 10px;
+  min-height:150px;
+}
+
+.bubble-time-container {
+  display:flex;
+  flex-direction: column;
+  width: 100px;
+  height:200px;
+}
+
+.speech-bubble-left {
+  order:0;
+  position: relative;
+  background: #1c6198;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  margin-left: 30px;
+  color: white;
+}
+
+.speech-bubble-left:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 18px solid transparent;
+  border-top-color: #1c6198;
+  border-bottom: 0;
+  border-right: 0;
+  margin-left: -9px;
+  margin-bottom: -18px;
+}
+
+.speech-bubble-right {
+  order:0;
+  position: relative;
+  background: #91c3be;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  float: right;
+  margin-right: 30px;
+}
+
+.timestamp {
+  order:1;
+  font-weight: 300;
+  content: '6:12pm';
+  position: absolute;
+  color: gray;
+  bottom: -16px;
+  left: 2.5px;
+  font-size: 12px;
+  position: absolute;
+}
+
+.speech-bubble-right:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 18px solid transparent;
+  border-top-color: #91c3be;
+  border-bottom: 0;
+  border-right: 0;
+  margin-left: -9px;
+  margin-bottom: -18px;
+}
+
+.inputBarContainer {
+  display: flex;
+  height: 50px;
+  padding: 15px;
+  bottom: -17px;
+  width: 770px;
+  padding-left: 70px;
+  margin: auto;
+}
+
+.inputBox, inputBox:focus {
+  order:1;
+  border:1px solid black;
+  padding: 10px;
+  width: 600px;
+  height: 20px;
+  border-radius: 15px;
+  outline: none;
+}
+
+.sendBtn {
+  color: black;
+  font-size: 14px;
+  order: 2;
+  padding: 8px;
+  border-radius: 15px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  height: 15px;
+  width: 80px;
+  margin-left: 20px;
+  text-align: center;
+  background-color: #1c6198;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.noConvos {
+  margin: auto;
+  border: 2px solid gray;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  border-radius: 15px;
+}
+
+.newMessage {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #1c6198;
+  font-size: 18px;
+  width: 150px;
+  padding: 10px;
+}
